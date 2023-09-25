@@ -1,1 +1,10 @@
+Check list: POST /lists/{id}/archiveAllCards 
+1. valid data: id (The ID of the list); ER:200 OK Success;
+2. invalid data: id (mistake); ER: 400 Bad Request invalid id;
+3. non id; ER:404 Not Found Cannot {request};
+4.mistake in "archiveAllCards"; ER:404 Not Found Cannot {request};
+5.no data key; ER:401 Unauthorized invalid key;
+6.no data token; ER: 401 Unauthorized unauthorized permission requested;
+7.no data key and token;  ER:401 Unauthorized invalid key.
 
+**I'm just starting out in QA. Do not judge strictly :)** 
